@@ -27,6 +27,20 @@ body {
 	color: white;
 }
 
+.ct-btn-scroll {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 70vh;
+  z-index: 9;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
 #sectionHeader {
 	padding-top: 2em;
 	text-align: center;
