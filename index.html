@@ -12,15 +12,17 @@
 	</script>
 	
 	<title>Melinda Ding</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">	
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 	<!-- Icon -->
 	<link rel="shortcut icon" href="imgs/website.ico" type="image/x-icon" />
+	<!-- Social Media Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- phone compatibility -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:url" content="https://melindading.com/">
@@ -30,41 +32,70 @@
 	<meta property="og:image" content="/imgs/website.jpg">
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<!-- javaScript -->
-	<script src="main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
 </head>
 
-<body>
-
-	<div id="header" class="jumbotron jumbotron-fluid">
-		<div id="headerItems" class="container">
-  			<h1 id="name" class="display-4">Hi, I'm Melinda!</h1>
-  			<hr id="headerLine" class="my-4">
-  			<p id="description" class="lead">designer + developer + innovator</p>
+<body>	  
+	<div id="header">
+		<div class="container">
+			<div class="row" style="height: 100vh; max-width: 100%;">
+				<div class="d-none d-lg-block col-lg-5" id="headerImageDiv">
+					<img class="img-responsive " src="imgs/main-pic.png" id="headerImage" width="auto" height="100%">
+				</div>
+				<div class="d-block col-12 col-lg-7" id="headerText">
+					<h2 style="font-size: 3em;">Hello! I'm</h2>
+					<h1 id="name" style="vertical-align: middle;">Melinda Ding</h1>
+					<hr id="headerLine" class="my-4">
+					<p id="description" class="lead">developer + dreamer + doer</p>
+					<!-- Social Media Icons -->
+					<a href="https://www.linkedin.com/in/melindading/" class="fa fa-linkedin" id="social-fa"></a>
+					<a href="https://github.com/mel-ding" class="fa fa-github" id="social-fa"></a>
+					<a href="mailto:mjd4@rice.edu" class="fa fa-envelope" id="social-fa"></a>
+					<div class="row">
+						<img src="imgs/scrolldown.gif" style="width: 100px; margin-left: -10px;">
+					</div>
+				</div>
+			</div>
 		</div>
-		<a class="ct-btn-scroll ct-js-btn-scroll" href="#sectionHeader"><img alt="Arrow Down Icon" src="https://raw.githubusercontent.com/solodev/scroll-down-anchor/master/images/arrow-down-1.png"></a>
 	</div>
 
 	<div class="container">
 		<h1 id="sectionHeader">About Me</h1>
 		<hr>
 		<div class="row">
-			<div class="col-xs-12 col-md-4" style="padding-top: 1.2em; padding-bottom: 1.2em;">
-				I am a third year undergraduate student at Rice University pursuing a Bachelor's of Science in Computer Science and a minor in Statistics. I am interested in optimization, whether its enhancing the user-experience or using data to drive decisions. I am passionate about women in STEM, ultimate frisbee, and good coffee.
-			</div>
 			<div class="col-xs-12 col-md-4">
-				<img id="avatar" src="imgs/IMG_8864.jpg">
+				<img id="avatar" src="imgs/aboutme.png">
 			</div>
-		    <div class="col-xs-12 col-md-4" style="padding-top: 1em;">
-      			I came into Rice University as a Chemical Engineer major. I was amazed by how chemical engineers use math, physics, and chemistry to optimize and enhance the world around us. After taking my first CS class, I realized optimization is an integral part of CS and I fell in love with the challenge that CS brings. Now, instead of using physics and chemistry, I use technology and math to change the world and make an impact. 
-    		</div>
+			<div class="col-xs-12 col-md-8" style="padding-top: 1.2em; padding-bottom: 1.2em; font-size: 1.2em; font-family: 'Roboto', sans-serif;">
+				<p><span id="IAM">I am</span> a fourth (and last) year undergraduate student at Rice University pursuing a B.S. in Computer Science and minor in Statistics.</p>
+				<p><span id="IAM">I am</span> data driven, diving deep into data sets to discover trends and patterns that drive decisions.</p>
+				<p><span id="IAM">I am</span> a product minded thinker, passionate about user centered design and interested in discovering what’s next.</p>
+				<p><span id="IAM">I am</span> experienced in product/program management, full stack development, data science, ultimate frisbee, and making iced lattes.</p>
+			</div>
 		</div>
 	</div>
-
 
 	<div id="work" class="container">
 		<h1 id="sectionHeader">Places I've Worked</h1>
 		<hr class="my-4">
+
+		<div id="subsection" class="row align-items-center">
+			<div id="workIMG" class="col d-none d-md-block offset-md-1">
+				<img src="imgs/microsoft.jpg" class="float-right img-fluid">
+			</div>
+			<div class="col-12 col-md-8">
+				<h3 id="company">Microsoft</h3>
+				<h4 id="role">Program Manager Intern</h4>
+				<h5 id="detail"><span class="fa fa-map-marker"></span> Redmond, WA (remote)
+					<span id="time" class="fa fa-calendar-alt"></span> May 2020 - Present </h5>
+				<p style="font-family: 'Roboto', sans-serif;"> 
+					I am current interning at Microsoft on the Enterprise Search Team.
+				</p>
+			</div>
+		</div>
+
 		<div id="subsection" class="row align-items-center">
 			<div id="workIMG" class="col d-none d-md-block offset-md-1">
 				<img src="imgs/google-cloud-logo.jpg" class="float-right img-fluid">
@@ -72,10 +103,10 @@
 			<div class="col-12 col-md-8">
 				<h3 id="company">Google</h3>
 				<h4 id="role">Engineering Practicum</h4>
-				<h5 id="detail"><span class="fa fa-map-marker-alt"></span> Sunnyvale, CA 
+				<h5 id="detail"><span class="fa fa-map-marker"></span> Sunnyvale, CA 
 					<span id="time" class="fa fa-calendar-alt"></span> May 2019 - August 2019 </h5>
-				<p> 
-					This past summer, I interned as a full stack software engineer on the Google Cloud Apps Enterprise Platform Team where I developed a self-serve user interface (UI) to facilitate faster service onboarding onto the new flexible sharing platform. In the backend portion, I implemented an asynchronous RPC server in Java to read configuration files and generate populated code changes to designated target reviews. For the frontend portion, I modified the UI to display configuration information by using frontend Javascript and HTML frameworks. As part of the engineering practicum program, I worked closely with another intern on the same project; I learned how to communicate technical information and how to work safely and efficiently in the same code base. 
+				<p style="font-family: 'Roboto', sans-serif;"> 
+					I previously interned as a full stack software engineer on the Google Cloud Apps Enterprise Platform Team where I developed a self-serve user interface (UI) to facilitate faster service onboarding onto the new flexible sharing platform. In the backend portion, I implemented an asynchronous RPC server in Java to read configuration files and generate populated code changes to designated target reviews. For the frontend portion, I modified the UI to display configuration information by using frontend Javascript and HTML frameworks. As part of the engineering practicum program, I worked closely with another intern on the same project; I learned how to communicate technical information and how to work safely and efficiently in the same code base. 
 				</p>
 			</div>
 		</div>
@@ -87,9 +118,10 @@
 			<div class="col-12 col-md-8">
 				<h3 id="company">Google Cloud Platform</h3>
 				<h4 id="role">Student Innovator</h4>
-				<h5 id="detail"><span class="fa fa-map-marker-alt"></span> Houston, TX 
+				<h5 id="detail"><span class="fa fa-map-marker"></span> Houston, TX 
 					<span id="time" class="fa fa-calendar-alt"></span> August 2018 - May 2019</h5>
-				<p> I am one of 200 Google Cloud Platform (GCP) Student Innovators nationwide, and one of 2 GCP Student Innovators at Rice University. My role is to educate my peers about GCP through workshops, live demos, and by handing out free GCP credits. Over this past year, I had meetings with professors and delivered technical presentations to my peers to help raise awareness and knowledge about GCP.
+				<p style="font-family: 'Roboto', sans-serif;"> 
+					I am one of 200 Google Cloud Platform (GCP) Student Innovators nationwide, and one of 2 GCP Student Innovators at Rice University. My role is to educate my peers about GCP through workshops, live demos, and by handing out free GCP credits. Over this past year, I had meetings with professors and delivered technical presentations to my peers to help raise awareness and knowledge about GCP.
 				</p>
 			</div>
 		</div>
@@ -101,9 +133,10 @@
 			<div id="OXT" class="col-12 col-md-8">
 				<h3 id="company">OpenStax</h3>
 				<h4 id="role">Product Management Intern</h4>
-				<h5 id="detail"><span class="fa fa-map-marker-alt"></span> Houston, TX 
+				<h5 id="detail"><span class="fa fa-map-marker"></span> Houston, TX 
 					<span id="time" class="fa fa-calendar-alt"></span> January 2018 - August 2018</h5>
-				<p> During my time at OpenStax, I gained valuable communication, analysis, and leadership skills.
+				<p style="font-family: 'Roboto', sans-serif;"> 
+					During my time at OpenStax, I gained valuable communication, analysis, and leadership skills.
 				I enhanced an existing product, Tutor, by adding a new feature; I led the project from start to end by designing mockups with the User Experience Team, implementing the feature with the Developers, testing for quality assurance, and training the Customer Service team. I also helped conceptualize a new product, Unified; I participated in design sprints and crafted the ideal user experience based on customer feedback and research. 
 				</p>
 			</div>
@@ -111,145 +144,466 @@
 	</div>
 
 
-	<div class="container">
-		<h1 id="sectionHeader">Things I've Done</h1>
-		<hr class="my-4">
-		<div class="row">
-			<div class="col-12 col-sm-6 col-lg-4">
-				<div class="card">
-				  <img src="imgs/hackrice.png" class="card-img-top" alt="...">
-				  <div class="card-body">
-				    <h5 class="card-title">HackRice Tracks</h5>
-				    <p class="card-text">As the head of the Tracks Committee, I created the tracks for HackRice. For HackRice 8.5, I created a FinTech for the experienced hackers, which encompassed a variety of FinTech topics such as data science, AI, applications, and chat bots. For the first timer track, I created a Chrome Extension Track. Google Chrome's easy-to-use interface, extensive documentation, and available APIs made it a pleasant experience for first time hackers. 
-				    </p>
-				    <a href="https://github.com/hack-rice/HR8.5-FinTech-Track" class="btn btn-outline-dark">FinTech Track</a>
-				    <a href="https://github.com/hack-rice/HR8.5-First-Timers-Track" class="btn btn-outline-dark">First Timer Track</a>
-				  </div>
+<h1 id="sectionHeader">Things I've Done</h1>
+<h2 id="things-done-descript">(click to learn more)</h2>
+<hr class="my-4">
+
+<div class="grid" data-masonry='{ "itemSelector": ".grid-item"}'>
+	<!-- RDS IVP -->
+	<div class="grid-item">
+		<div class="card p-2" data-toggle="modal" data-target="#modal1">
+			<img class="card-img-top" src="imgs/rds.png" alt="Rice Data Science Club">
+			<div class="card-body">
+			<h5 class="card-title">Internal Vice President</h5>
+			<p class="card-subtitle">Rice Data Science Club</p>
+			<p class="card-text">2020 - 2021 Academic Year</p>
+			</div>
+		</div>
+		<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title">RDS Internal Vice President</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+					As the current Internal Vice President of Rice Data Science, my responsibilities include: 
+					<ul>
+						<li>Plan and present interactive workshops for 100 members to teach about various data science concepts, from high level pipeline to statistical models.</li>
+						<li>Manage listserv and internal department connections to ensure 500+ club members stay informed and engaged of data science opportunities at Rice</li>
+						<li>Launched alumni newsletters to connect members with data science community.</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				</div>
 			</div>
-
-			<div class="col-12 col-sm-6 col-lg-4">
-				<div class="card">
-				  <img src="imgs/research.png" class="card-img-top" alt="...">
-				 	<div class="card-body">
-				    	<h5 class="card-title">PRYSM GUI</h5>
-				    	<p class="card-text"> I am currently creating a graphical user interface (GUI) for Civil Engineering Professor Sylvia Dee's Climate PROXY System Models. I am using tkinter, a python GUI package. This GUI will make it easier for other scientists to input data into the models and quickly visualize the results. </p>
-				    	<a href="http://www.owlnet.rice.edu/~mjd4/" class="btn btn-outline-dark" >Website</a>
-				    	<a href="http://onlinelibrary.wiley.com/doi/10.1002/2015MS000447/full" class="btn btn-outline-dark">PRYSM paper</a>
-				    	<a href="https://github.com/mel-ding/PrysmGUI" class="btn btn-outline-dark">Github</a>
-				  	</div>
-				</div>
 			</div>
-
-			<div class="col-12 col-sm-6 col-lg-4">
-				<div class="card">
-				  <img src="imgs/exhibit.jpeg" class="card-img-top" alt="...">
-				 	<div class="card-body">
-				    	<h5 class="card-title">Freshman Design</h5>
-				    	<p class="card-text"> I created a hot air balloon exhibit for the Children's Museum of Houston to teach children about thermodynamic principles. I worked in a team of 5 to create the exhibit from scratch. We won first place in the freshman design category at Rice's 2018 Engineering Design Showcase. </p>
-				    	<a href="https://www.youtube.com/watch?v=XdSgsisTmkQ" class="btn btn-outline-dark">Video</a>
-				  	</div>
-				</div>
-			</div>
-
-			<div class="col-12 col-sm-6 col-lg-4">
-				<div class="card">
-				  <img src="imgs/website.jpg" class="card-img-top" alt="...">
-				 	<div class="card-body">
-				    	<h5 class="card-title">This website!</h5>
-				    	<p class="card-text"> This very website you are currently looking at started from a desire to learn front-end technologies, as well as develop and deploy a project I could call my own. Creating this website has taught me the fundamentals of HTML/CSS/Bootstrap and how to deploy my own project. I also had a fun time designing and picking the color scheme. </p>
-				  	</div>
-				</div>
-			</div>
-
 		</div>
 	</div>
 
-	<div class="container">
-		<h1 id="sectionHeader">Things I've Accomplished</h1>
-		<hr class="my-4">
-
-        <div class="row">
-
-		    <div class="col-6 col-md-4">
-		      <div class="thumb">
-		        <a href="https://www.credential.net/oaex97cu?key=a49a73d4aa319c6f528975ba62cfb0c80e6217bbb52dfcfdd80605719c9bd175">
-		          <img src="imgs/GSuite.png" class="img-fluid" style="vertical-align: middle;">
-		          <div class="hover-opaque">
-		    			<div id="hoverTitle">GCloud Certification: G-Suite</div>
-		    			<div id="hoverText" class="d-none d-lg-block">Issued by Google, this certifies  ability to use cloud-based tools to create and share documents, spreadsheets, presentations, and files, and communicate effectively with email and online meeting solutions.</div>
-		          </div>
-		        </a>
-		      </div>
-		    </div>
-
-		    <div class="col-6 col-md-4">
-		      <div class="thumb">
-		        <a href="https://www.coursera.org/account/accomplishments/certificate/KS3PC66R44XT">
-		          <img src="imgs/coursera1.png" class="img-fluid" style="vertical-align: middle;">
-		          <div class="hover-opaque">
-		    			<div id="hoverTitle">Essential Cloud Infrastructure: Foundation</div>
-		    			<div id="hoverText" class="d-none d-lg-block">Issued by Coursera, this certifies knowledge of the comprehensive and flexible infrastructure and platform services provided by Google Cloud Platform.</div>		          	
-		          </div>
-		        </a>
-		      </div>
-		    </div>
-
-		    <div class="col-6 col-md-4">
-		      <div class="thumb">
-		        <a href="https://www.coursera.org/account/accomplishments/certificate/JASM4ESEKWJY">
-		          <img src="imgs/coursera2.png" class="img-fluid" style="vertical-align: middle;">
-		          <div class="hover-opaque">
-		    			<div id="hoverTitle">GCP Fundamentals: Core Infrastructure</div>
-		    			<div id="hoverText" class="d-none d-lg-block">Issued by Coursera, this certifies knowledge of computing and storage services available in Google Cloud Platform, including Google App Engine, Google Compute Engine, and Google Container Engine.</div>
-		          </div>
-		        </a>
-		      </div>
-		    </div>
-
-		    <div class="col-6 col-md-4">
-		      <div class="thumb">
-		        <a href="https://www.qwiklabs.com/public_profiles/696ae522-5127-485f-a626-98371b2ba4b0">
-		          <img src="imgs/qwiklabs.png" class="img-fluid" style="max-height: 300px;">
-		          <div class="hover-opaque">
-	    			<div id="hoverTitle">GCP Essentials Certification</div>
-	    			<div id="hoverText" class="d-none d-lg-block">Issued by Qwiklabs, this certifies hands-on practice with Google Cloud Platform’s fundamental tools and services.</div>
-		          </div>
-		        </a>
-		      </div>
-		    </div>
-
-        </div>
-
+	<!-- RICE APPS PM -->
+	<div class="grid-item">
+		<div class="card p-2" data-toggle="modal" data-target="#modal2">
+			<img class="card-img-top" src="imgs/riceapps.png" alt="RiceApps">
+			<div class="card-body">
+			<h5 class="card-title">Product Manager</h5>
+			<p class="card-subtitle">RiceApps</p>
+			<p class="card-text">2020 - 2021 Academic Year</p>
+			</div>
+		</div>
+		<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Product Manager</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						I am currently a product manager on project Hedwig, a mobile ordering application for businesses and serveries on campus. 
+						My responsiblities include scoping requirements, creating a product roadmap, and managing communication between stakeholders and our team. 
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
+	<!-- HFD -->
+	<div class="grid-item">
+		<div class="card p-2" data-toggle="modal" data-target="#modal3">
+			<img class="card-img-top" src="imgs/hfd.png" alt="Houston Risk Assessment">
+			<div class="card-body">
+			<h5 class="card-title">Houston Risk Assessment</h5>
+			<p class="card-subtitle">Data2Knowledge Lab</p>
+			<p class="card-text">Spring 2020 | 
+				<a href="https://github.com/cmm16/hfd-spring-2020" target="_blank" class="btn btn-outline-secondary" id="expbtn">Github</a> | 
+				<a href="https://rice.app.box.com/s/qoxwjch1cir9ggsjkea5wj91gqmauir7" target="_blank" class="btn btn-outline-secondary" id="expbtn">Video</a>						
+			</p>
+			<p class="card-text" id="card-award">Rice Data Science Showcase 2020 People's Choice Award</p>
+			</div>
+		</div>
+		<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Houston Risk Assessment</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<p id="award">Rice Data Science Showcase 2020 People's Choice Award</p>
+							<p> <strong>Data:</strong> Census Demographic Data and Houston Fire Department Call Data</p>
+							<p>
+								<strong>Description:</strong> Semester long project to conduct a granular demographic based risk assessemnt of Houston for the Houston Fire Department.
+								I worked in a team of 6 (5 undergraduate and 1 graduate) students of various majors to design and implement a full data science pipeline. 
+								As the semester progressed and covid-19 became a world pandemic, we shifted the scope of our project to include a covid-19 specific risk assessment to 
+								highlight areas of higher risk based on possible resource mismatch. 
+								Our project was motivated by <span id="IAM">data driven discoveries</span> and relied heavily on visualizations to uncover patterns and areas of risk in Houston. 
+								I utilized folium to create interactive maps of Houston to visualize risk geospatially, and I used k-means clustering to cluster demographically similar neighborhoods to improve interpretability and simplify our analysis. 	
+							</p>
+						</div>
+						<div class="col-12 col-md-6 ml-auto">
+							<img style="max-width: 100%" src="imgs/AudienceChoice.png">
+						</div>
+					</div> <!-- row div -->
+					</div> <!-- container fluid div -->
+				</div> <!-- modal body div -->
+				<div class="modal-footer">
+						<a href="https://github.com/cmm16/hfd-spring-2020" target="_blank" class="btn btn-primary">Github</a>
+						<a href="https://rice.app.box.com/s/qoxwjch1cir9ggsjkea5wj91gqmauir7" target="_blank" class="btn btn-primary">Video</a>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
+	<!-- coachRice -->
+	<div class="grid-item">
+		<div class="card p-2" data-toggle="modal" data-target="#modal5">
+			<img class="card-img-top" src="imgs/doerr.jpg" alt="Doerr Institute">
+			<div class="card-body">
+			<h5 class="card-title">CoachRICE</h5>
+			<p class="card-subtitle">Doerr Institute for New Leaders</p>
+			<p class="card-text">2019 - 2020 Academic Year</p>
+			</div>
+		</div>
+		<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">CoachRICE</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<p>
+									I completed 60 hours of non credit coursework approved by International Coach Federation to be formally trained as a peer leadership coach.
+									Through this process, I developed a tool kit and methodology to coach and develop others as leaders, while identifying my own 
+									professional and personal development goals. I learned to support growth and change in others through humble inquiry and 
+									attentive listening. My biggest takeaway was to approach life with a <span id="IAM">growth mindset</span>.
+								</p>
+							</div>
+							<div class="col-12 col-md-6 ml-auto">
+								<img style="max-width: 100%" src="imgs/doerrcert.png">
+							</div>
+						</div> <!-- row div -->
+						</div> <!-- container fluid div -->
+					</div> <!-- modal body div -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- CNNs, DEE -->
+	<div class="grid-item">
+		<div class="card p-2" data-toggle="modal" data-target="#modal4">
+			<img class="card-img-top" src="imgs/cnn.png" alt="Convolutional Neural Networks">
+			<div class="card-body">
+			<h5 class="card-title">El Niño Convolutional Neural Network</h5>
+			<p class="card-subtitle">Dee Paleo-Climate Lab</p>
+			<p class="card-text">Spring 2020</p>
+			</div>
+		</div>
+		<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">El Niño Convolutional Neural Network</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						My most recent work with Dr. Dee includes developing convolutional neural networks to classify air temperature patterns into El Niño events. 
+						I utilized a physics-based model to label a millenia of yearly air temperature data, with 20 versions per year, into 3 categories:
+						not an El Niño event, an Eastern-Pacific El Niño event, and a Central Pacific El Niño event. 
+						I then split the data into test/train/validation sets, reshaped the data for modelling, and 
+						tested different models to determine the best model architecture for this problem. 
+						We were able to create a model with ~85% accuracy. 
+						Because of the mid-semester interruption from covid-19, progress on this project was greatly affected. 
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PRYSM -->
+	<div class="grid-item">
+		<div class="card p-2" data-toggle="modal" data-target="#modal6">
+			<img class="card-img-top" src="imgs/prysm.png" alt="PRYSM GUI">
+			<div class="card-body">
+				<h5 class="card-title">PRYSM GUI</h5>
+				<p class="card-subtitle">Dee Paleo-Climate Lab</p>
+				<p class="card-text">Spring, Fall 2019 | 
+				<a href="http://prysm-gui.rice.edu/" target="_blank" class="btn btn-outline-secondary" id="expbtn">Website</a> | 
+				<a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2015MS000447" target="_blank" class="btn btn-outline-secondary" id="expbtn">PRYSM Paper</a>
+				</p>
+			</div>
+		</div>
+		<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">PRYSM GUI</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>
+							I created a graphical user interface (GUI) for Earth Science Professor Sylvia Dee's Climate PROXY System Models using python GUI library tkinter. 
+							The PRYSM models take in climate data (such as temperature) and output physical proxy data, such as tree ring cellulose. 
+							By creating a GUI, we strive to expand use of PRYSM in the climate community and promote PRYSM as a teaching tool by making it easier to input data into PRYSM models to quickly visualize and obtain results. 
+							We hope to provide a lasting service to the paleoclimate community, as well as for geoscience education.
+						</p>
+						</div> <!-- modal body div -->
+					<div class="modal-footer">
+						<a href="http://prysm-gui.rice.edu/" target="_blank" class="btn btn-primary">Website</a>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+				</div>
+		</div>
+	</div>
+
+	<!-- RDS MENTOR -->
+	<div class="grid-item">
+		<div class="card p-2" data-toggle="modal" data-target="#modal7">
+			<img class="card-img-top" src="imgs/rds.png" alt="Rice Data Science Club">
+			<div class="card-body">
+			<h5 class="card-title">Mentor</h5>
+			<p class="card-subtitle">Rice Data Science Club</p>
+			<p class="card-text">2019 - 2020 Academic Year</p>
+			</div>
+		</div>
+		<div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title">RDS Mentor</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+					As a Mentor for Rice Data Science Club, my responsibilities included: 
+					<ul>
+						<li>Mentored team of 8 beginner students (freshmen or non-CS/stat major) through entire data science pipeline 
+							as part of Rice Data Science Club's Data Education and Exploration Project (DEEP) Program</li>
+						<li>Led students in analyzing Houston crime data from 2009 - 2017, discovering seasonal effects of crime.</li>
+						<li>Taught python and python libraries such as pandas, geopandas, matplotlib, and sklearn, inspiring confidence in student's ability to pursue data science</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Datathon -->
+	<div class="grid-item">
+		<div class="card p-2" data-toggle="modal" data-target="#modal8">
+			<img class="card-img-top" src="imgs/wildForestFires.png" alt="Wild Forest Fires">
+			<div class="card-body">
+				<h5 class="card-title">Wild Forest Fires</h5>
+				<p class="card-subtitle">Datathon Project</p>
+				<p class="card-text">January 2020 | 
+					<a href="https://sites.google.com/view/datathon2020spring/home?authuser=0" target="_blank" class="btn btn-outline-secondary" id="expbtn">Website</a>
+				</p>
+				<p class="card-text" id="card-award">Rice 2020 Datathon Track Winner</p>
+			</div>
+		</div>
+		<div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Wild Forest Fires</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>
+							I worked in a team of 4 to design and implement a full data pipeline to analyze forest wildfire data. I utilized 
+							popular python library plotly to create interactive maps visualizing key trends in data. We also developed a Random Forest Classifier 
+							model that predicts the severity of a wildfire based on the expected area it will engulf using the fire’s initial conditions. 
+							This model achieved ~81% accuracy.
+						</p>
+					</div> <!-- modal body div -->
+					<div class="modal-footer">
+						<a href="https://sites.google.com/view/datathon2020spring/home?authuser=0" target="_blank" class="btn btn-primary">Website</a>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+				</div>
+		</div>
+	</div>
+
+	<!-- HackRice -->
+	<div class="grid-item">
+		<div class="card p-2" data-toggle="modal" data-target="#modal9">
+			<img class="card-img-top" src="imgs/hackrice.png" alt="HackRice">
+			<div class="card-body">
+				<h5 class="card-title">Tracks Committe Head</h5>
+				<p class="card-subtitle">HackRice</p>
+				<p class="card-text">2018 - 2019 Academic Year | 
+					<a href="https://github.com/hack-rice/HR9-First-Timers-Track" target="_blank" class="btn btn-outline-secondary" id="expbtn">First Timer's Track</a> | 
+					<a href="https://github.com/hack-rice/HR8.5-FinTech-Track" target="_blank" class="btn btn-outline-secondary" id="expbtn">FinTech Track</a>
+				</p>
+			</div>
+		</div>
+		<div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">HackRice Tracks Committee Head</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>
+							As the head of the Tracks Committee, I created the tracks for HackRice. 
+							For HackRice 8.5, I created a FinTech for the experienced hackers, which encompassed a variety of FinTech topics such as data science, AI, applications, and chat bots. 
+							For the first timer track, I created a Chrome Extension Track. Google Chrome's easy-to-use interface, extensive documentation, and available APIs made it a pleasant experience for first time hackers.
+						</p>
+					</div> <!-- modal body div -->
+					<div class="modal-footer">
+						<a href="https://github.com/hack-rice/HR9-First-Timers-Track" target="_blank" class="btn btn-primary">First Timer's Track</a>
+						<a href="https://github.com/hack-rice/HR8.5-FinTech-Track" target="_blank" class="btn btn-primary">FinTech Track</a>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+				</div>
+		</div>
+	</div>
+
+	<!-- Freshman Design -->
+	<div class="grid-item">
+		<div class="card p-2" data-toggle="modal" data-target="#modal10">
+			<img class="card-img-top" src="imgs/exhibit.jpeg" alt="Bad & Balloonee">
+			<div class="card-body">
+				<h5 class="card-title">Bad & Balloonee</h5>
+				<p class="card-subtitle">Oshman Engineering Design Kitchen</p>
+				<p class="card-text">2017 - 2018 Academic Year | 
+					<a href="https://www.youtube.com/watch?v=XdSgsisTmkQ" target="_blank" class="btn btn-outline-secondary" id="expbtn">Video</a>				
+				</p>
+			</div>
+			<p class="card-text" id="card-award">Rice 2018 Engineering Showcase Freshman Design Winner</p>
+		</div>
+		<div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Freshman Design: Bad & Balloonee</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p id="award">Rice 2018 Engineering Showcase Freshman Design Winner</p>
+						<p>
+							I worked in a team of 5 to create a hot air balloon exhibit from scratch for the Children's Museum of Houston to teach children about thermodynamic principles. 
+							I led the balloon design component, facilitated communication in engineering team meetings, and facilitated communication with museum stakeholders. 
+						</p>
+					</div> <!-- modal body div -->
+					<div class="modal-footer">
+						<a href="https://www.youtube.com/watch?v=XdSgsisTmkQ" target="_blank" class="btn btn-primary">Video</a>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+				</div>
+		</div>
+	</div>
+
+	<!-- GSuite Cer -->
+	<div class="grid-item">
+		<div class="card p-2" data-toggle="modal" data-target="#modal11">
+			<img class="card-img-top" src="imgs/GSuite.png" alt="HackRice">
+			<div class="card-body">
+				<h5 class="card-title">GSuite Certification</h5>
+				<p class="card-text">Google | 
+					<a href="https://www.credential.net/4ea637e4-dbf9-4ea9-9eb1-90fb6a57ad69?key=a49a73d4aa319c6f528975ba62cfb0c80e6217bbb52dfcfdd80605719c9bd175#gs.96zdu9" target="_blank" class="btn btn-outline-secondary" id="expbtn">Credential</a>				
+				</p>
+			</div>
+		</div>
+		<div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">HackRice Tracks Committee Head</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>
+							Issued by Google, this certifies ability to use cloud-based tools to create and share documents, spreadsheets, presentations, and files, 
+							and communicate effectively with email and online meeting solutions. 						</p>
+					</div> <!-- modal body div -->
+					<div class="modal-footer">
+						<a href="https://www.credential.net/4ea637e4-dbf9-4ea9-9eb1-90fb6a57ad69?key=a49a73d4aa319c6f528975ba62cfb0c80e6217bbb52dfcfdd80605719c9bd175#gs.96zdu9" target="_blank" class="btn btn-primary">Credential</a>	
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+				</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- LETS CONNECT -->
 	<div class="container">
 		<h1 id="sectionHeader">Let's Connect</h1>
 		<hr class="my-4">
 		<div class="row align-items-center">
-			<div class="col-12 col-sm-6 col-md-4" style="text-align: center;">
+			<div class="col-12" style="text-align: center;">
 				<a id="contactInfo" href="https://www.linkedin.com/in/melindading/">
-					<span class="fab fa-linkedin"></span> linkedin.com/melindading
+					<span class="fa fa-linkedin-square"></span> linkedin.com/melindading
 				</a>
 			</div>
 
-			<div class="col-12 col-sm-6 col-md-4" style="text-align: center;">
+			<div class="col-12" style="text-align: center;">
+				<a id="contactInfo" href="https://github.com/mel-ding">
+					<span class="fa fa-github" style="color:#6AB8EE"></span> github.com/mel-ding
+				</a>
+			</div>
+
+			<div class="col-12" style="text-align: center;">
 				<a id="contactInfo" href="mailto:mjd4@rice.edu">
 					<span class="far fa-envelope"></span> mjd4@rice.edu
 				</a>
 			</div>
-
-			<div class="col-12 col-sm-6 col-md-4" style="text-align: center">
-				<a id="contactInfo" href="https://github.com/mel-ding">
-					<span class="fab fa-github"></span> github.com/mel-ding
-				</a>
-			</div>
-
-		</div>		
+		</div>	
+		<br><br><br><br>
+		<p>Website last updated: June 2020</p>	
 		<br><br><br>
 	</div>
-	<script src="index.js"></script>
+
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </body>
 </html>
