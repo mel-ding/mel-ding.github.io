@@ -2,6 +2,10 @@
 
 This respository contains the code for my personal website at [melindading.com](https://melindading.com/).
 
-I used HTML, CSS, and Bootstrap. 
+The website was designed and coded by me.
 
-I linked Github Pages with my personal Namecheap domain.
+### Tech Used 
+- HTML 
+- CSS 
+- Bootstrap 
+- Masonry
